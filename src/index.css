@@ -1,13 +1,47 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+CSS for NavbarComponent
+.bg-body-tertiary {
+  position: relative;
+  z-index: 1; /* Ensure navbar appears above the background image */
+  min-height: 150px; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* CSS for Home component background image */
+.background-image {
+  background-image: url('images/banner.webp'); /* Path to your background image */
+  background-size: cover;
+  position: relative;
+  height:100vh;
+  z-index: 0; /* Ensure background image is behind the navbar */
+  /* Additional styles for the background image container */
 }
+/* CSS for content container */
+.content-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure content container covers the entire viewport height */
+  
+}
+/* CSS for NavbarComponent */
+.bg-body-tertiary {
+  background-color: #552583; /* Change the background color to blue */
+  position: relative;
+  z-index: 1; /* Ensure navbar appears above the background image */
+  height: 150px;
+}
+/* CSS for Navbar items */
+.navbar-nav .nav-link {
+  color: white !important; /* White text color for navbar items */
+}
+/* CSS for content */
+.content {
+  text-align: center;
+  color: #000; /* Adjust text color as needed */
+  margin-top: -87vh; 
+}
+
+/* Additional styles for the content */
+.content h1 {
+  font-size: 3.5rem; /* Adjust font size as needed */
+}
+
